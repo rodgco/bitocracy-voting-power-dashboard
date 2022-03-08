@@ -1,0 +1,125 @@
+body {
+	/* base colors */
+	--hue-primary: 0;
+	--sat-primary: 0%;
+	--hue-secondary: 41;
+	--sat-secondary: 69%;
+	--hue-featured: 41;
+	--sat-featured: 69%;
+	--luma-flowText: 100%;
+	--luma-headings: 100%;
+	--luma-featured: 52%;
+	--luma-nav: 100%;
+	--luma-header-bg: 0%;
+	--luma-main-bg: 9%;
+	--luma-article-bg: 12%;
+	--luma-fader: 18%;
+	--color-main-bg: hsl(var(--hue-primary), var(--sat-primary), var(--luma-main-bg));
+	--color-flowText: hsl(var(--hue-primary), var(--sat-primary), var(--luma-flowText));
+	--color-featured: hsl(var(--hue-featured), var(--sat-featured), var(--luma-featured));
+	--color-chrome-bg: hsl(var(--hue-primary), var(--sat-primary), var(--luma-header-bg));
+	--color-heading-text: hsl(var(--hue-primary), var(--sat-primary), var(--luma-headings));
+	--color-modal-fader: hsla(var(--hue-primary), var(--sat-primary), var(--luma-fader), 0.8);
+	--color-modal-bg: hsl(var(--hue-primary), var(--sat-primary), var(--luma-main-bg));
+	--color-nav-anchor: hsl(var(--hue-featured), var(--sat-primary), var(--luma-nav));
+	--color-article-bg: hsl(var(--hue-primary), var(--sat-primary), var(--luma-article-bg));
+	--color-shadow: #0003;
+	--shadow-chrome: 0 0.25em 1em 0.25em var(--color-shadow);
+	--shadow-button: 0 0.25em 0.25em 0.125em var(--color-shadow);
+	--shadow-formElement-focus: 0 0 0.25em 0.125em #038;
+
+	--border-hairline: 1px solid #2f2f2f;
+
+	/* base measurements */
+
+	--maxWidth-constrain: 64rem;
+	--maxWidth-flow: 40rem;
+	--maxWidth-modal: 32rem;
+	--maxWidth-modalForm: 24rem;
+	--pad: clamp(0.5em, min(2vw, 4vh), 4em);
+	--borderRadius-outer: 0.5em;
+	--borderRadius-inner: 0.25em;
+}
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+caption,
+table,
+tr,
+td,
+th,
+address,
+blockquote,
+img {
+	margin: 0;
+	padding: 0;
+}
+img,
+fieldset,
+object {
+	border: none;
+}
+*,
+*:after,
+*:before {
+	flex: 1 0 auto; /* safari bugfix */
+	box-sizing: border-box;
+}
+button,
+label {
+	cursor: pointer;
+}
+html,
+body {
+	height: 100%;
+	background: var(--color-chrome-bg);
+}
+hr {
+	display: none;
+}
+body,
+button,
+input,
+table,
+textarea,
+select {
+	font: normal 1em/1.5 'montserrat', arial, helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'rowdies', arial, helvetica, sans-serif;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	box-shadow: var(--shadow-formElement-focus);
+}
+main > section {
+	max-width: var(--maxWidth-constrain);
+	margin: 4em auto;
+	padding: 0 var(--pad);
+}
+main h2 {
+	font-size: 2em;
+}
