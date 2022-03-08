@@ -1,0 +1,26 @@
+[
+	{
+		"name": "RSK Mainnet",
+		"chain": "RSK",
+		"rpc": ["https://public-node.rsk.co", "https://mycrypto.rsk.co"],
+		"faucets": ["https://free-online-app.com/faucet-for-eth-evm-chains/"],
+		"nativeCurrency": { "name": "RSK Mainnet Ether", "symbol": "RBTC", "decimals": 18 },
+		"infoURL": "https://rsk.co",
+		"shortName": "rsk",
+		"chainId": 30,
+		"networkId": 30,
+		"slip44": 137,
+		"explorers": [{ "name": "blockscout", "url": "https://explorer.rsk.co", "standard": "EIP3091" }]
+	},
+	{
+		"name": "RSK Testnet",
+		"chain": "RSK",
+		"rpc": ["https://public-node.testnet.rsk.co", "https://mycrypto.testnet.rsk.co"],
+		"faucets": ["https://faucet.testnet.rsk.co"],
+		"nativeCurrency": { "name": "RSK Testnet Ether", "symbol": "tRBTC", "decimals": 18 },
+		"infoURL": "https://rsk.co",
+		"shortName": "trsk",
+		"chainId": 31,
+		"networkId": 31
+	}
+]
