@@ -106,7 +106,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'rowdies', arial, helvetica, sans-serif;
+	/* font-family: 'rowdies', arial, helvetica, sans-serif; */
 }
 button:focus,
 input:focus,
